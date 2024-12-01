@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name=“description” content="El Olivo restaurant contact form"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>El Olivo - Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Styles-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="row logo-container">
+        <img src="images/logo.png" class="logo" alt="Logo">
+    </div>
+    <div class="row justify-content-center my-3">
+        <div class="button-row">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="our_team.html">About Us</a></button>
+            <button><a href="menu.html">Menu</a></button>
+            <button class="active"><a href="contact_us.html">Contact Us</a></button>
+        </div>
+    </div>
+    <div class="rounded-body col-10 mx-auto">
+        <div class="row mt-3">
+  				<div class="col-8">
+  					<div class="row gradient-home rounded">
+  						<h4>Contact Information</h4>
+  						<div class="row ms-0 mt-3 open-sans-text">
+  							<form onsubmit="submitForm(event)">
+					            <!-- Name field -->
+					            <div class="form-group">
+					                <label for="name">Name</label>
+					                <input type="text" class="form-control" name="name" required>
+					            </div>
+
+					            <!-- Email field with validation -->
+					            <div class="form-group">
+					                <label for="email">Email</label>
+					                <input type="email" class="form-control" name="email" required
+					                       placeholder="example@domain.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
+					            </div>
+
+					            <!-- Dropdown list -->
+					            <div class="form-group">
+					                <label for="queryType">Query Type</label>
+					                <select class="form-control" name="queryType" required>
+					                    <option value="customer_review">Customer review</option>
+					                    <option value="new_booking">New booking</option>
+					                    <option value="other">Other queries</option>
+					                </select>
+					            </div>
+
+					            <!-- Body field -->
+					            <div class="form-group">
+					                <label for="body">Message</label>
+					                <textarea class="form-control" name="body" rows="5" required></textarea>
+					            </div>
+
+					            <!-- Submit button -->
+					            <button type="submit" class="btn-submit mt-2">Submit</button>
+					        </form>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>	
+    </div>
+    <!--Javascript file-->
+    <script src="scripts/contact_us.js"></script>
+</body>
+</html>
