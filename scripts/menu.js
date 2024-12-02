@@ -356,9 +356,11 @@ const renderPagination = (totalPages) => {
     // Generate pagination HTML
     for (let i = 1; i <= totalPages; i++) {
         const pageButton = `
+        <div class="col-2">
             <button class="page-btn ${i === currentPage ? "active" : ""}" data-page="${i}">
                 ${i}
             </button>
+        </div>    
         `;
         $("#pagination").append(pageButton);
     }

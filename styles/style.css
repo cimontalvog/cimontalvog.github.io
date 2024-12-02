@@ -113,15 +113,17 @@
     border-left: none;
 }
 
-/* Rounded Corners for First and Last Buttons */
-.button-row button:first-child {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
+@media (min-width: 769px) {
+    /* Rounded Corners for First and Last Buttons */
+    .button-row button:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
 
-.button-row button:last-child {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    .button-row button:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 }
 
 /* Hover Effect */
@@ -161,6 +163,10 @@ h4 {
     font-family: 'Candara', sans-serif;
 }
 
+img {
+  background: transparent;
+}
+
 /* Button and Input Alignment */
 .row {
     margin: 0 auto;
@@ -187,6 +193,7 @@ h4 {
 }
 
 .pagination-container {
+    width: 25%;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -225,4 +232,43 @@ h4 {
 
 .transparent-image {
   background: transparent; /* Ensures the background is transparent */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 576px) {
+    .search-input {
+        width: 100%; /* Use the entire width on very small screens */
+        font-size: 12px; /* Further reduce font size for tiny screens */
+        padding: 6px 12px; /* Compact padding */
+    }
+}
+
+/* Responsive Design for Small-Medium Screens */
+@media (max-width: 768px) {
+    .search-input {
+        width: 90%; /* Adjust width to occupy most of the screen, with some padding */
+        max-width: 100%; /* Remove max-width restriction */
+        font-size: 14px; /* Slightly smaller font for mobile */
+        padding: 8px 16px; /* Adjust padding for smaller screen */
+    }
+    
+    .button-row {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Ensure buttons span the full width */
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .button-row button {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: none; /* Remove unnecessary borders for stacked layout */
+        margin-bottom: 5px; /* Add spacing between buttons */
+    }
+
+    .button-row button:child {
+        margin-bottom: 0; /* Avoid extra spacing for the last button */
+    }
 }

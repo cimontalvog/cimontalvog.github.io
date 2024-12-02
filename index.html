@@ -26,19 +26,21 @@
     </div>
     <div class="rounded-body col-10 mx-auto">
         <div class="row">
-            <h4 class="title-left">How it all started</h4>
+            <h4 class="title-left mb-4">How it all started</h4>
             <p>
             El Olivo is a Spanish restaurant located in the heart of the center of Dublin. Since opening its doors in 2024, it has become a favourite place for lovers of Spanish cuisine. The restaurant was founded by a group of passionate chefs who wanted to bring the quality of Spain to Ireland. Over the years, El Olivo has built a strong reputation, friendly service, and delicious and tasty dishes such as paella, tapas, and freshly made churros. Whether you're looking for a relaxed meal with friends or a romantic dinner, El Olivo offers an unforgettable feeling of a Spain memory.
             </p>
         </div>
         <hr>
-        <div class="d-flex align-items-start">
-            <iframe width="300" height="250"
-            src="https://www.youtube.com/embed/vNBuXsTY15E" class="me-3">
-            </iframe>
+        <div class="row align-items-start"">
+            <div class="col-12 col-md-4">
+                <iframe width="300" height="250"
+                src="https://www.youtube.com/embed/vNBuXsTY15E">
+                </iframe>
+            </div>
             <!-- Text on the right -->
-            <div>
-                <h4 class="title-left">Paella, our special rice dish</h4>
+            <div class="col-12 col-md-8">
+                <h4 class="title-left mb-4">Paella, our special rice dish</h4>
                 <p>
                 The authentic taste of Spain with our homemade paella. It contains fresh seafood, tender meats, and rice with a lovely flavour. Each bite takes you on a journey to the Mediterranean places. Perfectly cooked, it's an ultimate dish for introducing and sharing with family and friends. You are more than welcome to join in a tradition that it's as rich in taste as it's history!
                 </p>
@@ -46,12 +48,40 @@
         </div>
         <hr>
         <div class="row">
-            <h4 class="title-left">A Review</h4>
-            <p>El Olivo is a modern and aesthetic Spanish restaurant. This menu offers a satisfying list of dishes with a 100% quality from Spain. They looked great in the description and about the price, it has a medium-low level of expenses. 
-            The place is well done decorated, and it has an impeccable service. It feels like you are in a comfortable Spanish tavern. 
-            If you are looking for something new, you must visit El Olivo restaurant!
-            </p>
-            <!--<img src="images/stars.png">--> 
+            <div class="col-12">
+                <h4 class="title-left mb-4">A Review</h4>
+                <p>El Olivo is a modern and aesthetic Spanish restaurant. This menu offers a satisfying list of dishes with a 100% quality from Spain. They looked great in the description and about the price, it has a medium-low level of expenses. 
+                The place is well done decorated, and it has an impeccable service. It feels like you are in a comfortable Spanish tavern. 
+                If you are looking for something new, you must visit El Olivo restaurant!
+                </p>
+            </div>    
+            <div class="col-12 d-flex justify-content-start">
+                <span class="me-2">Rachel Quinn</span><img src="images/5_of_5.png" width="100">
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-start">
+            <div class="col-12 col-md-4">
+                <div id="googleMap" style="width:300px;height:250px;"></div>
+                <script>
+                    function myMap() {
+                    var mapProp= {
+                      center:new google.maps.LatLng(51.508742,-0.120850),
+                      zoom:5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+            </div>
+            <!-- Text on the right -->
+            <div class="col-12 col-md-8">
+                <h4 class="title-left mb-4">Visit us</h4>
+                <p>
+                El Olivo is waiting for your appetite in order to taste our iberian style! We are located in 16 Portmarnock Rd, Dublin 2.
+                </p>
+            </div>
         </div>
     </div>
 </body>
