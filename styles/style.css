@@ -189,6 +189,7 @@ img {
     background: linear-gradient(to bottom, #BACA84, rgba(245, 245, 220, 0)); /* Gradient effect */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a 3D effect */
     margin-top: 20px; /* Space from the top of the page */
+    margin-bottom: 10px;
     text-align: center; /* Center align text (optional) */
 }
 
