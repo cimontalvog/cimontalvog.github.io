@@ -149,10 +149,12 @@ p {
 }
 
 h1 {
+    font-size: 175%;
     font-family: 'Candara', sans-serif;
 }
 
 h2 {
+    font-size: 125%;
     font-family: 'Candara', sans-serif;
 }
 
