@@ -74,7 +74,7 @@ const dishes = [
   {
     "name": "Leche frita",
     "category": "desserts",
-    "image": "leche-frita-BAJA.jpg",
+    "image": "lechefrita.jpg",
     "price": 5.5
   },
   {
@@ -394,7 +394,7 @@ const renderImages = () => {
         const imageHTML = `
             <div class="col-12 offset-1 col-md-6 col-lg-4 mb-4">
                 <div class="image-container">
-                <img src="images/${dish.image}" class="img-fluid">
+                <img src="images/${dish.image}" class="img-fluid" alt="${dish.name}">
                 <div class="overlay-text"><p>${dish.name}</p><p>${dish.price} €</p></div>
                 </div>
             </div>
