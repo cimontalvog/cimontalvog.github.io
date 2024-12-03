@@ -113,17 +113,14 @@
     border-left: none;
 }
 
-@media (min-width: 769px) {
-    /* Rounded Corners for First and Last Buttons */
-    .button-row button:first-child {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
+.button-row button:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 
-    .button-row button:last-child {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
+.button-row button:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* Hover Effect */
@@ -253,14 +250,14 @@ img {
         padding: 8px 16px; /* Adjust padding for smaller screen */
     }
     
-    .button-row {
+    .button-row-secondary {
         flex-direction: column; /* Stack buttons vertically */
         align-items: center; /* Ensure buttons span the full width */
         justify-content: center;
         padding: 10px;
     }
 
-    .button-row button {
+    .button-row-secondary button {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -269,7 +266,7 @@ img {
         margin-bottom: 5px; /* Add spacing between buttons */
     }
 
-    .button-row button:child {
+    .button-row-secondary button:child {
         margin-bottom: 0; /* Avoid extra spacing for the last button */
     }
 }
