@@ -271,4 +271,8 @@ img {
     .button-row-secondary button:child {
         margin-bottom: 0; /* Avoid extra spacing for the last button */
     }
+
+    .button-row button a {
+        font-size: 75%;
+    }
 }
