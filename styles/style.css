@@ -101,13 +101,6 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.button-row button a {
-    all: unset; /* Reset all styles on the <a>, we want to keep button style */
-    display: block; /* Ensure <a> fills the button area */
-    width: 100%; /* Make <a> match button dimensions */
-    height: 100%;
-}
-
 /* Remove border between middle buttons */
 .button-row button:not(:first-child) {
     border-left: none;
@@ -246,7 +239,7 @@ img {
 /* Responsive Design for Small-Medium Screens */
 @media (max-width: 768px) {
     .search-input {
-        width: 90%; /* Adjust width to occupy most of the screen, with some padding */
+        width: 80%; /* Adjust width to occupy most of the screen, with some padding */
         max-width: 100%; /* Remove max-width restriction */
         font-size: 14px; /* Slightly smaller font for mobile */
         padding: 8px 16px; /* Adjust padding for smaller screen */
@@ -270,9 +263,5 @@ img {
 
     .button-row-secondary button:child {
         margin-bottom: 0; /* Avoid extra spacing for the last button */
-    }
-
-    .button-row button a {
-        font-size: 75%;
     }
 }
