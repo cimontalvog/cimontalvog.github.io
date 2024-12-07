@@ -392,9 +392,9 @@ const renderImages = () => {
   	// Generate the HTML dynamically
   	paginatedDishes.forEach((dish) => {
         const imageHTML = `
-            <div class="col-12 offset-1 col-md-6 col-lg-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center align-items-center">
                 <div class="image-container">
-                <img src="images/${dish.image}" class="img-fluid" alt="${dish.name}">
+                  <img src="images/${dish.image}" class="img-fluid" alt="${dish.name}">
                 <div class="overlay-text"><p>${dish.name}</p><p>${dish.price} €</p></div>
                 </div>
             </div>
